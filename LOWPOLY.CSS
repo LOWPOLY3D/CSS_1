@@ -6,16 +6,22 @@
   border-color: #B50831;
   border-width: 0;
   border-radius: 0;
-  background-color: #303030;
+  background-color: #B50831;
   box-shadow: none;
   border-collapse: separate;
+  background-image: url('wrapper_bg.png');
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(top, #4A4A4A 0%, #2D2D2D 100%);
+  background-image: -webkit-linear-gradient(top, #4A4A4A 0%, #2D2D2D 100%);
+  background-image: linear-gradient(top, #4A4A4A 0%, #2D2D2D 100%);
+  background-size: 100% 100%;
   font-size: 0;
   line-height: 0;
 }
 
 #mbmcpebul_wrapper.quirks {
-  margin-bottom: 1px;
-  margin-right: 1px;
+  margin-bottom: 5px;
+  margin-right: 5px;
 }
 
 #mbmcpebul_wrapper.quirks #mbmcpebul_table ul li {
@@ -24,8 +30,8 @@
 
 #mbmcpebul_table {
   margin: 0px;
-  margin-bottom: -1px;
-  margin-right: -1px;
+  margin-bottom: -5px;
+  margin-right: -5px;
   padding: 0;
   line-height: 0px;
   font-size: 0px;
@@ -34,14 +40,14 @@
 }
 
 #mbmcpebul_table li a {
-  line-height: 16px;
-  font-size: 13px;
+  line-height: 18px;
+  font-size: 15px;
   font-family: Arial,sans-serif;
   text-decoration: none;
   color: #FFFFFF;
   font-style: normal;
   font-weight: bold;
-  padding: 12px 27px 12px 12px;
+  padding: 10px 25px 10px 10px;
   display: block;
   cursor: pointer;
   white-space: nowrap;
@@ -49,10 +55,10 @@
 }
 
 #mbmcpebul_table li div.buttonbg {
-  height: 40px;
+  height: 38px;
   width: 86px;
   line-height: 0;
-  background-color: #303030;
+  background-color: transparent;
   border-style: solid;
   border-color: #800421;
   border-width: 0;
@@ -72,7 +78,7 @@
 
 
 #mbmcpebul_table li.expanded div.buttonbg, #mbmcpebul_table li.active div.buttonbg, #mbmcpebul_table li.itemhot div.buttonbg, #mbmcpebul_table li:hover div.buttonbg {
-  background-color: #3F81B4;
+  background-color: #870522;
   box-shadow: none;
 }
 
@@ -124,18 +130,18 @@
   border-color: #870724;
   border-width: 0;
   padding: 0;
-  background: #4081B4;
+  background: #870724;
   font-size: 0;
-  border-radius: 0;
+  border-radius: 0 6px 6px 6px;
 }
 
 #mbmcpebul_table ul li a {
-  padding: 7px 15px 7px 13px;
+  padding: 10px 18px 10px 16px;
   text-align: left;
 }
 
 #mbmcpebul_table ul li.separator {
-  padding: 7px;
+  padding: 10px;
   cursor: default;
   background: none;
   box-shadow: none;
@@ -162,8 +168,16 @@
   border-radius: 0;
   padding: 0;
   box-shadow: none;
-  background-color: #4081B4;
+  background-color: transparent;
   display: block;
+}
+
+#mbmcpebul_table ul li.first_item {
+  border-radius: 0 6px 0 0;
+}
+
+#mbmcpebul_table ul li.last_item {
+  border-radius: 0 0 6px 6px;
 }
 
 
@@ -178,7 +192,7 @@
 #mbmcpebul_table li {
   list-style: none;
   float: left;
-  margin: 0px 1px 1px 0px;
+  margin: 0px 5px 5px 0px;
   padding: 0;
   float: left;
   display: inline-block;
@@ -236,6 +250,12 @@
 @media screen and (max-width: 500px) {
   #mbmcpebul_wrapper:not(.scripted) {
     text-align: center;
+    background-image: url('wrapper_simple_bg.png');
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(top, #4A4A4A 0%, #2D2D2D 100%);
+    background-image: -webkit-linear-gradient(top, #4A4A4A 0%, #2D2D2D 100%);
+    background-image: linear-gradient(top, #4A4A4A 0%, #2D2D2D 100%);
+    background-size: 100% 100%;
   }
 
   #mbmcpebul_wrapper:not(.scripted) #mbmcpebul_table li {
@@ -246,6 +266,12 @@
 
 #mbmcpebul_wrapper.centeritems {
   text-align: center;
+  background-image: url('wrapper_simple_bg.png');
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(top, #4A4A4A 0%, #2D2D2D 100%);
+  background-image: -webkit-linear-gradient(top, #4A4A4A 0%, #2D2D2D 100%);
+  background-image: linear-gradient(top, #4A4A4A 0%, #2D2D2D 100%);
+  background-size: 100% 100%;
 }
 
 #mbmcpebul_wrapper.centeritems #mbmcpebul_table li {
@@ -263,10 +289,34 @@
   background-image: url(ebab_mbmcp_c.png); 
   background-repeat: no-repeat; 
   background-position: right center; 
-  padding-right: 19px; 
+  padding-right: 22px; 
+} 
+
+#mbmcpebul_table li:hover div.gradient38, #mbmcpebul_table li.expanded div.gradient38, #mbmcpebul_table li.active div.gradient38, #mbmcpebul_table li.itemhot div.gradient38 { 
+  background-image: url('buttonhot_bg.png'); 
+  background-repeat: repeat-x; 
+  background-color: #0D5A96; 
+} 
+
+#mbmcpebul_table li:hover div.gradient_button, #mbmcpebul_table li.expanded div.gradient_button, #mbmcpebul_table li.active div.gradient_button, #mbmcpebul_table li.itemhot div.gradient_button { 
+  background-image: -moz-linear-gradient(top, #5992BF 0%, #0D5A96 100%); 
+  background-image: -webkit-linear-gradient(top, #5992BF 0%, #0D5A96 100%); 
+  background-image: linear-gradient(top, #5992BF 0%, #0D5A96 100%); 
+} 
+
+#mbmcpebul_table ul.gradient72 { 
+  background-image: url('menu_bg.png'); 
+  background-repeat: repeat-x; 
+  background-color: #065C9F; 
+} 
+
+#mbmcpebul_table ul.gradient_menu { 
+  background-image: -moz-linear-gradient(top, #4384B7 0%, #065C9F 100%); 
+  background-image: -webkit-linear-gradient(top, #4384B7 0%, #065C9F 100%); 
+  background-image: linear-gradient(top, #4384B7 0%, #065C9F 100%); 
 } 
 
 #mbmcpebul_table li a.button_2, #mbmcpebul_table li div a.button_2 { 
-  padding-right: 12px; 
+  padding-right: 10px; 
 } 
 
